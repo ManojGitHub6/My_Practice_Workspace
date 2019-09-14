@@ -1,0 +1,4 @@
+2019-09-13 14:53:14,122 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:53:14,131 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:53:14,133 - log4j.Demo -ERROR - Error
+2019-09-13 14:53:14,134 - log4j.Demo -FATAL - fatal message

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [parent1]">
+  <parameter name="browser" value="safari"/>
+  <test name="childs 1(failed)">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="testng.RunningBatches.Child2">
+        <methods>
+          <include name="testB"/>
+        </methods>
+      </class> <!-- testng.RunningBatches.Child2 -->
+    </classes>
+  </test> <!-- childs 1(failed) -->
+</suite> <!-- Failed suite [parent1] -->
