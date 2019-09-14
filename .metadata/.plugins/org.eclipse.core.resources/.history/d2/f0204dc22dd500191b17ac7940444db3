@@ -1,0 +1,69 @@
+package testng;
+
+import org.testng.Assert;
+import org.testng.SkipException;
+import org.testng.annotations.Test;
+
+public class Assertions {
+
+	
+	// test cass passes
+	//here iam making test case pass even the condition is false
+	@Test
+	public void test() {
+		
+		int a=2;
+		int b=4;
+		boolean c=a>b;
+		System.out.println();
+	Assert.assertEquals(c, false);
+		
+	}
+	
+	//failing the test case even the condition is true
+	//test case failed
+	@Test
+	public void test1() {
+		
+		int a=21;
+		int b=4;
+		Assert.assertFalse(a>b);
+	}
+	
+	//test can be skipped in two ways by writing "enabled=false" in @Test and by writing throw new SkipException(); in the method 
+	//by "enabled=false" it will just skip the test without any info in console
+	//by throw new SkipException(); it will skip by showing status that it is skipped and here script written above this will be executed and we cant write code 
+//	 below this statement
+	
+	@Test(enabled=false)
+	public void test3() {
+		
+		System.out.println("hello");
+		System.out.println("all");
+		
+		throw new SkipException("skipped");
+		
+	}
+	
+	@Test
+	public void assertions() {
+		
+		System.out.println("manoj");
+		Assert.assertEquals(true, true);
+		//to compare boolean values(actual,expected)
+		Assert.assertEquals("x", "x");
+		//to compare two characters(actual,expected)
+		Assert.assertEquals(21, 21);
+        // compare to integer values (actual,expected)
+		Assert.assertEquals("Hello", "Hello");
+		//compare two string value(case-sensitive)
+		Assert.assertEquals("manoj", "manoj", "text mis-matched");
+		//here the text mis-matched will be displayed if test case fails
+		Assert.assertTrue(13>4);
+		//checks the true condition
+		Assert.assertTrue(5>6, "condition is not satisfied");
+		
+	}
+	
+	
+}

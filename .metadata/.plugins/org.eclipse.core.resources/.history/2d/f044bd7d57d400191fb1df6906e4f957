@@ -1,0 +1,38 @@
+package concepts;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FindElements {
+	static WebDriver driver=null;
+	
+	public void login() {
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.get("http://127.0.0.1/orangehrm-4.0/symfony/web/index.php/auth/login");
+		driver.findElement(By.name("txtUsername")).sendKeys("admin");
+		driver.findElement(By.id("txtPassword")).sendKeys("Admin@123");
+		driver.findElement(By.xpath(".//*[@name=\"Submit\"]")).click();
+		
+	}
+	public void close() {
+		driver.quit();
+	}
+	
+	public static void main(String[] args) throws Exception {
+		FindElements fl=new FindElements();
+		fl.login();
+		driver.findElement(By.linkText("Admin")).click();
+		driver.findElement(By.partialLinkText("PI")).click();
+		driver.findElement(By.cssSelector("input[name*='empName']")).sendKeys("Manoj");
+		Thread.sleep(5000);
+		fl.close();
+		}
+
+}

@@ -1,0 +1,23 @@
+package arrays;
+
+public class SIngleDimensionalArray {
+	
+	public static void main(String[] args) {
+		
+		//Array is used to store multiple data for the mentioned size and datatype
+		//syntax:- datatype name[]=new datatype[size]
+		
+	String x[]=new String[4];
+	x[0]="Manoj";
+	x[1]="Hello";
+	x[2]="phone";
+	x[3]="charger";
+	
+	for(int i=0;i<3;i++) {
+		
+		System.out.println(x[i]);
+	}
+		
+	}
+
+}

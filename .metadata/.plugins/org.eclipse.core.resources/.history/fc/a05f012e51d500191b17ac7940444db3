@@ -1,0 +1,29 @@
+package testng.parallel;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class ParallelTests {
+	
+	WebDriver driver;
+	
+	@Test
+	public void test1() {
+		
+		WebElement user=driver.findElement(By.id("txtUsername"));
+		user.sendKeys("admin");
+		user.sendKeys(Keys.TAB);
+	}
+	
+	@Test
+	public void test2() {
+		
+		WebElement user=driver.findElement(By.id("txtUsername"));
+		user.sendKeys("manoj");
+		user.sendKeys(Keys.TAB);
+	}
+	
+}

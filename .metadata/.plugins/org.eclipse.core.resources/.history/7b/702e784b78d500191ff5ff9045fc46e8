@@ -1,0 +1,21 @@
+package log4j;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.testng.annotations.Test;
+
+public class Demo {
+
+	Logger logger=Logger.getLogger("Demo");
+	@Test
+	public void test() {
+		PropertyConfigurator.configure("log4j.properties");
+		
+		System.out.println("hello");
+		logger.info("hello dispalyed");
+		logger.info("Manoj kumar");
+		
+		
+	}
+	
+}

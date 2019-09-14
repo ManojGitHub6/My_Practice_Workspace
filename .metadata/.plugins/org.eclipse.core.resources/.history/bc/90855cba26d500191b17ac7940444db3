@@ -1,0 +1,18 @@
+package testng;
+
+public class Assertions {
+
+	
+	
+	@Test
+	public void test() {
+		
+		int a=2;
+		int b=4;
+		if(a>b) {
+			System.out.println("a is greater than b");
+		}
+		
+		
+	}
+}

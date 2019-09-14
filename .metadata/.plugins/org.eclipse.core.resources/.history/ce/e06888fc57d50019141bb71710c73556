@@ -1,0 +1,10 @@
+package dataProvider;
+
+public class parallelDataProvider {
+	
+	@DataProvider
+	public Object[][] data(){
+	  return	new Object[][] {{"manoj"},{"admin"},{"HEllo"}}
+	}
+
+}

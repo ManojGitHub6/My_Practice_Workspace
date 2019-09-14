@@ -1,0 +1,16 @@
+package com.Utility;
+
+import java.util.ArrayList;
+
+import org.apache.poi.xssf.eventusermodel.XSSFReader;
+
+public class Test_Utils {
+	
+	static XSSFReader reader;
+	public static void getdatafromExcel() {
+		
+		ArrayList<Object[]> mydata =new ArrayList<Object[]>();
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+package arrays;
+
+import java.sql.Array;
+
+public class SIngleDimensionalArray {
+	
+	public static void main(String[] args) {
+		
+	String x[]=new String[4];
+	x[0]="Manoj";
+	x[1]="Hello";
+	x[2]="phone";
+	x[3]="charger";
+	
+	for(int i=0;i<3;i++) {
+		
+		System.out.println(x[i]);
+	}
+		
+		
+		
+	}
+
+}

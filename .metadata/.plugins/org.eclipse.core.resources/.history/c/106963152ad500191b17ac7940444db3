@@ -1,0 +1,44 @@
+package testng;
+
+import org.testng.Assert;
+import org.testng.SkipException;
+import org.testng.annotations.Test;
+
+public class Assertions {
+
+	
+	// test cass passes
+	//here iam making test case pass even the condition is false
+	@Test
+	public void test() {
+		
+		int a=2;
+		int b=4;
+		boolean c=a>b;
+		System.out.println();
+	Assert.assertEquals(c, false);
+		
+	}
+	
+	//failing the test case even the condition is true
+	//test case failed
+	@Test
+	public void test1() {
+		
+		int a=21;
+		int b=4;
+		Assert.assertFalse(a>b);
+	}
+	
+	@Test()
+	public void test3() {
+		
+		System.out.println("hello");
+		System.out.println("all");
+		
+		throw new SkipException("skipped");
+		
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+[main] INFO log4j.Demo - hello dispalyed
+[main] INFO log4j.Demo - Manoj kumar
+[main] INFO log4j.Demo - hello dispalyed
+[main] INFO log4j.Demo - Manoj kumar
+[main] INFO log4j.Demo - hello dispalyed
+[main] INFO log4j.Demo - Manoj kumar
+[main] ERROR log4j.Demo - Error
+[main] INFO log4j.Demo - hello dispalyed
+[main] INFO log4j.Demo - Manoj kumar
+[main] ERROR log4j.Demo - Error
+[main] INFO log4j.Demo - hello dispalyed
+[main] INFO log4j.Demo - Manoj kumar
+[main] ERROR log4j.Demo - Error
+[main] INFO log4j.Demo - hello dispalyed
+[main] INFO log4j.Demo - Manoj kumar
+[main] ERROR log4j.Demo - Error
+[main] INFO log4j.Demo - hello dispalyed
+[main] INFO log4j.Demo - Manoj kumar
+[main] ERROR log4j.Demo - Error
+[main] FATAL log4j.Demo - fatal message

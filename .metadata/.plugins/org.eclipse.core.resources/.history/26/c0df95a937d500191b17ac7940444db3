@@ -1,0 +1,13 @@
+package testng;
+
+import org.testng.annotations.Test;
+
+public class Data_Test {
+	
+	@Test(dataProviderClass=Dataprovider.class,dataProvider="data")
+	public void register() {
+		
+		
+	}
+
+}

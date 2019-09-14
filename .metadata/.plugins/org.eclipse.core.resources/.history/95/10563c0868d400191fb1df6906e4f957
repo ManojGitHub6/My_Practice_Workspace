@@ -1,0 +1,22 @@
+package concepts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class DropDown extends FindElements {
+	static FindElements fs=new FindElements();
+	
+	public static void main(String[] args) throws Exception {
+		
+	    WebDriver driver=new ChromeDriver();
+		
+		fs.login();
+		driver.findElement(By.linkText("Admin")).sendKeys(Keys.ENTER);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package testng;
+
+public class Hieararchy {
+	
+	@Test
+	public void setup() {
+		
+		System.out.println("test1 passed");
+	}
+
+}

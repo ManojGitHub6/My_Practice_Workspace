@@ -1,0 +1,46 @@
+package DataDriven;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
+
+public class Sample  {
+	
+	
+	
+	@DataProvider(name="dataForEmp")
+	public Object[][]  info() throws IOException {
+		
+		fis=new FileInputStream("./ExcelFiles/testdata.xlsx");
+		workbook=new XSSFWorkbook(fis);
+		sheet=workbook.getSheet("BaseData");
+		int rowCount=sheet.getLastRowNum();
+		int cellCount=sheet.getRow(0).getLastCellNum();
+		
+		Object[][] data=new Object[rowCount][cellCount];
+		
+		for(int i=1;i<=rowCount;i++)
+		{
+			 for(int j=0;j<=cellCount-1;j++) {
+				 
+				 row=sheet.getRow(i);
+				 cell=row.getCell(j);
+				 String val=cell.getStringCellValue();
+				 data[i][j]=val;
+			 }
+		}
+		  return data;
+		
+	}
+	public static FileInputStream fis;
+	public static XSSFWorkbook workbook;
+	public static XSSFSheet sheet;
+	public static Row row;
+	public static Cell cell;
+}
+

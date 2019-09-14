@@ -1,0 +1,27 @@
+package testng.RunningBatches;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.beust.jcommander.Parameter;
+
+public class Child2 {
+	
+	@Test
+	public void testA() {
+		System.out.println("testA passed");
+	}
+	
+	@Parameters("browser")
+	@Test
+	public void testB(String browser) {
+		System.out.println("testB passed");
+		System.out.println(browser);
+	}
+	
+	@Test
+	public void testC() {
+		System.out.println("testC passed");
+	}
+
+}

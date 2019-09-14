@@ -1,0 +1,32 @@
+package testng;
+
+import org.testng.ITestResult;
+import org.testng.TestListenerAdapter;
+
+public class TestedListen extends TestListenerAdapter{
+	
+	TestListener tl=new TestListener();
+
+	public void onTestSuccess(ITestResult tr) {
+		
+		
+		System.out.println("tested ok");
+		
+		/*int status=tr.getStatus();
+		System.out.println(status);
+		if(status==2) {
+			System.out.println("test failed");
+		}
+		else if(status==1) {
+			System.out.println("test passed");
+		}
+		else 
+			if(status==3){
+			System.out.println("test skipped");
+		}
+		*/
+	}
+	
+
+	}
+

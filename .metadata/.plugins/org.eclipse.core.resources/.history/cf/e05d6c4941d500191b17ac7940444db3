@@ -1,0 +1,9 @@
+package testng;
+
+import org.testng.TestListenerAdapter;
+
+public class TestedListen extends TestListenerAdapter{
+
+	
+	
+}

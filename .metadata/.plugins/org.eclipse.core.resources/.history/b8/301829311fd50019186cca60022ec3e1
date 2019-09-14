@@ -1,0 +1,10 @@
+<suite name="parent1">
+<test verbose="2" name='childs' >
+<classes>
+<class name="testng.RunningBatches.Child1"/>
+<class name="testng.RunningBatches.Child2"
+</classes>
+
+</test>
+
+</suite>

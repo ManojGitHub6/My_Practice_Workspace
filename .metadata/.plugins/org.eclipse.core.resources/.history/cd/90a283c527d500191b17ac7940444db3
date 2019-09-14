@@ -1,0 +1,22 @@
+package testng;
+
+import org.testng.annotations.Test;
+
+import junit.framework.Assert;
+
+public class Assertions {
+
+	
+	
+	@Test
+	public void test() {
+		
+		int a=2;
+		int b=4;
+		boolean c=a>b;
+		System.out.println(c);
+	 Assert.assertEquals(true, c);
+		
+		
+	}
+}

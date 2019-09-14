@@ -1,0 +1,20 @@
+2019-09-13 14:15:33,872 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:15:33,884 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:18:01,566 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:18:01,566 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:24:26,236 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:24:26,298 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:24:26,310 - log4j.Demo -ERROR - Error
+2019-09-13 14:25:27,582 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:25:27,582 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:25:27,582 - log4j.Demo -ERROR - Error
+2019-09-13 14:26:31,929 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:26:31,931 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:26:31,931 - log4j.Demo -ERROR - Error
+2019-09-13 14:27:23,983 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:27:23,998 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:27:23,998 - log4j.Demo -ERROR - Error
+2019-09-13 14:28:48,901 - log4j.Demo -INFO - hello dispalyed
+2019-09-13 14:28:48,902 - log4j.Demo -INFO - Manoj kumar
+2019-09-13 14:28:48,902 - log4j.Demo -ERROR - Error
+2019-09-13 14:28:48,902 - log4j.Demo -FATAL - fatal message

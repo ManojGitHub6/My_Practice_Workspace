@@ -1,0 +1,9 @@
+<suite name="master_file" >
+<suite-files>
+<suite-file path="./Class1.xml"/>
+<suite-file path=",/Parent2.xml" />
+</suite-files>
+
+
+
+</suite>

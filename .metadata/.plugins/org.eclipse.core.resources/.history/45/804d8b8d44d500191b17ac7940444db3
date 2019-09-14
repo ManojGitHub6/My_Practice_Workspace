@@ -1,0 +1,73 @@
+package testng;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
+import org.testng.SkipException;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+public class TestListener {
+	
+	WebDriver driver=null;
+	
+	@Test
+	public void test1() {
+		
+		int a=4;
+		int b=13;
+		
+		Assert.assertTrue(b>a);
+	}
+	
+	@Test
+	public void test3() {
+		
+		int a=4;
+		int b=1;
+		
+		Assert.assertTrue(b>a);
+	}
+	
+	@Test
+	public void test2() {
+		throw new SkipException("skipped");
+		/*int a=4;
+		int b=1;
+		
+		Assert.assertTrue(b>a);*/
+	}
+	
+	
+/*	@AfterMethod
+	public void teardown(ITestResult tr) {
+		
+		int status=tr.getStatus();
+		System.out.println(status);
+		if(status==2) {
+			System.out.println("test failed");
+		}
+		else if(status==1) {
+			System.out.println("test passed");
+		}
+		else 
+			if(status==3){
+			System.out.println("test skipped");
+		}
+		
+	}*/
+	
+	public void screenshot() {
+		
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(source, new File("./drivers/failed.png"));
+		
+	}
+
+}

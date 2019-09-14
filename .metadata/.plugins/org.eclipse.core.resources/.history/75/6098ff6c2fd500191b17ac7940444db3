@@ -1,0 +1,20 @@
+package testng;
+
+import org.testng.annotations.DataProvider;
+
+public class Dataprovider {
+
+	@DataProvider
+	public Object[][] details(){
+		
+		Object[][] obj=new Object[2][2];
+		obj[0][0]="manoj";
+		obj[0][1]="kumar";
+		
+		obj[1][0]="testing";
+		obj[1][1]="selenium";
+		return obj;
+	}
+	
+	
+}

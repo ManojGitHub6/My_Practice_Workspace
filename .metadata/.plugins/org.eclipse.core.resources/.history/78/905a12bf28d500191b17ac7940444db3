@@ -1,0 +1,38 @@
+package testng;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Assertions {
+
+	
+	// test cass passes
+	//here iam making test case pass even the condition is false
+	@Test
+	public void test() {
+		
+		int a=2;
+		int b=4;
+		boolean c=a>b;
+		System.out.println();
+	Assert.assertEquals(c, false);
+		
+	}
+	
+	// <parameter name="name" value="xyz"/>
+	// IN class @Parameters(name), in method(String name) using name to call in method
+	
+	@Test
+	public void test() {
+		
+		int a=2;
+		int b=4;
+		boolean c=a>b;
+		System.out.println();
+	Assert.assertEquals(c, false);
+		
+	}
+	
+	
+	
+}

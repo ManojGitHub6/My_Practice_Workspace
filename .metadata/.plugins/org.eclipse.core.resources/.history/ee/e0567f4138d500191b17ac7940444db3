@@ -1,0 +1,24 @@
+package testng;
+
+import org.testng.annotations.Test;
+
+public class Data_Test {
+	
+	@Test(dataProviderClass= Dataprovider.class, dataProvider="dtails")
+	public void register(String name, String course) {
+		
+		System.out.println(name);
+		System.out.println(course);
+	}
+
+	
+	@Test(dataProviderClass=Dataprovider.class, dataProvider="data")
+	public void forms(String first,String second,String third,String fourth) {
+		System.out.println(first);
+		System.out.println(second);
+		System.out.println(third);
+		System.out.println(fourth);
+		
+	}
+	
+}

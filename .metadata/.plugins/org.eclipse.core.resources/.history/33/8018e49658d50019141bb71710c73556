@@ -1,0 +1,17 @@
+package dataProvider;
+
+import org.junit.Test;
+import org.testng.annotations.DataProvider;
+
+public class parallelDataProvider {
+	
+	@DataProvider
+	public Object[][] data(){
+	  return new Object[][] {{"manoj"},{"admin"},{"HEllo"}};
+	}
+
+	@Test(dataProvider="data")
+	public void test(String value) {
+		System.out.println(value);
+	}
+}

@@ -1,0 +1,22 @@
+package testng.parallel;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeTest;
+
+public class TestBase {
+	
+	WebDriver driver=null;
+	
+	@BeforeTest
+	public void setup() {
+		
+		driver=new BrowserFactory().create("chrome");
+		setWebdriver(driver);
+	}
+	
+	public void setWebDriver(WebDriver driver) {
+	 BrowserFactory().
+	
+	
+
+}

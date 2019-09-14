@@ -1,0 +1,7 @@
+<suite name="Parallel Test">
+	<test verbose="2" parallel="methods">
+		<classes>
+			<class name="testng.ParallelTests"
+		</classes>
+	</test>
+</suite>
